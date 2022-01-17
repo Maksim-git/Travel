@@ -14,45 +14,45 @@
     />
   </head>
   <body>
-    <div class="bg-light-yellow">
-      <div class="wrapper-centering">
-        <header class="header">
-          <div class="logo__header">
+    <div class="linear-gradient_yellow">
+      <div class="content-centering">
+        <header class="header header_margin">
+          <div class="header__logo">
             <a class="logo" href="#">Travel</a>
           </div>
-          <nav class="navigation">
-            <ul class="list">
-              <li class="list__item">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="item__header">
                 <a
-                  class="txt-uppercase list__item_link list__item__link_header"
+                  class="txt-uppercase item__link item__link_hover header__link"
                   href="#"
                   >Home</a
                 >
               </li>
-              <li class="list__item">
+              <li class="item__header">
                 <a
-                  class="txt-uppercase list__item_link list__item__link_header"
+                  class="txt-uppercase item__link item__link_hover header__link"
                   href="#"
                   >About</a
                 >
               </li>
-              <li class="list__item">
+              <li class="item__header">
                 <a
-                  class="txt-uppercase list__item_link list__item__link_header"
+                  class="txt-uppercase item__link item__link_hover header__link"
                   href="#"
                   >Services</a
                 >
               </li>
-              <li class="list__item">
+              <li class="item__header">
                 <a
-                  class="txt-uppercase list__item_link list__item__link_header"
+                  class="txt-uppercase item__link item__link_hover header__link"
                   href="#"
                   >Gallery</a
                 >
               </li>
-              <li class="list__item">
+              <li class="item__header">
                 <a
-                  class="txt-uppercase list__item_link list__item__link_header"
+                  class="txt-uppercase item__link item__link_hover header__link"
                   href="#"
                   >Contact</a
                 >
@@ -61,40 +61,24 @@
           </nav>
         </header>
         <!-- section header content -->
-        <main class="main">
-          <div class="content">
-            <h1 class="txt-uppercase content__h1">
-              <span class="content__color">Travel is</span> beautiful
+        <main class="travel">
+          <div class="travel_content content">
+            <h1 class="txt-uppercase content__h1 travel__h1">
+              <span class="txt-color-infrared">Travel is</span>
+              beautiful
             </h1>
-            <p class="content__txt">
+            <p class="content__txt txt-pt-serif">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s
             </p>
           </div>
-
-          <form class="request-form" action="#">
+          <form class="request-form" action="link">
             <h3 class="txt-uppercase request-form__h3">Request a quote</h3>
-            <input
-              class="request-form__input"
-              type="text"
-              placeholder="Full Name"
-            />
-            <input
-              class="request-form__input"
-              type="text"
-              placeholder="Email Adress"
-            />
-            <input
-              class="request-form__input"
-              type="text"
-              placeholder="Phone Number"
-            />
-            <input
-              class="request-form__input"
-              type="text"
-              placeholder="Country"
-            />
+            <input class="request-form__input" placeholder="Full Name" />
+            <input class="request-form__input" placeholder="Email Adress" />
+            <input class="request-form__input" placeholder="Phone Number" />
+            <input class="request-form__input" placeholder="Country" />
             <div class="request-form__checkbox">
               <label class="checkbox style-c">
                 <input type="checkbox" />
@@ -104,77 +88,78 @@
                 </div>
               </label>
             </div>
-            <button class="txt-uppercase request-form__button">Send</button>
+            <button class="txt-uppercase request-form__button button">
+              Send
+            </button>
           </form>
         </main>
       </div>
     </div>
     <!-- section our services -->
-    <section class="wrapper-centering section-first">
-      <h4 class="txt-uppercase section-first__h4">
-        <span class="content__color">Our</span> services
+    <section class="content-centering our-services">
+      <h4 class="txt-uppercase our-services__h4">
+        <span class="txt-color-infrared">Our</span> services
       </h4>
-      <div class="section-first__list">
-        <div class="section-first__list__item">
+      <div class="our-services__row">
+        <div class="our-services__column item-about">
           <img
-            class="section-first__list__item__img"
+            class="our-services__img"
             src="./images/png/heart.png"
             alt="heart"
           />
-          <p class="section-first__list__item__paragraph">
+          <p class="our-services__paragraph txt-pt-serif">
             Making your trip beautiful and easier
           </p>
         </div>
-        <div class="section-first__list__item">
+        <div class="our-services__column">
           <img
-            class="section-first__list__item__img"
+            class="our-services__img"
             src="./images/png/tools.png"
             alt="heart"
           />
-          <p class="section-first__list__item__paragraph">
+          <p class="our-services__paragraph txt-pt-serif">
             Tools to help you succeed tommorow
           </p>
         </div>
-        <div class="section-first__list__item">
+        <div class="our-services__column">
           <img
-            class="section-first__list__item__img"
+            class="our-services__img"
             src="./images/png/lamp.png"
             alt="heart"
           />
-          <p class="section-first__list__item__paragraph">
+          <p class="our-services__paragraph txt-pt-serif">
             Ideas that will blow you out the blue.
           </p>
         </div>
-        <div class="section-first__list__item">
+        <div class="our-services__column">
           <img
-            class="section-first__list__item__img"
+            class="our-services__img"
             src="./images/png/cursor.png"
             alt="heart"
           />
-          <p class="section-first__list__item__paragraph">
+          <p class="our-services__paragraph txt-pt-serif">
             Navigate your path to beautiful world.
           </p>
         </div>
       </div>
     </section>
     <!-- section second -->
-    <section class="section-second">
-      <div class="wrapper-centering">
-        <div class="section-second__flex">
-          <p class="section-second__paragraph">
-            We are in business for over 6 years providing amazing services to
-            client and people love them to the core. View our story to know
-            more.
-          </p>
-          <button class="txt-uppercase section-second__button">
-            Our story
-          </button>
-        </div>
+    <section class="our-story">
+      <div class="our-story__flex content-centering">
+        <p class="our-story__paragraph txt-pt-serif">
+          We are in business for over 6 years providing amazing services to
+          client and people love them to the core. View our story to know more.
+        </p>
+        <button class="txt-uppercase our-story__button button">
+          Our story
+        </button>
       </div>
     </section>
+
+    <!-- end -->
     <!-- section third -->
     <section class="section-third">
-      <div class="wrapper-centering">
+      <div class="content-centering">
         <h4 class="txt-uppercase section-third__paragraph">Prising</h4>
         <div class="section-third__cards">
           <div class="cards__body">
@@ -212,7 +197,7 @@
       </div>
     </section>
     <!-- section fourth -->
-    <section class="section-fourth wrapper-centering">
+    <section class="section-fourth content-centering">
       <div class="section-fourth__body">
         <h3 class="section-fourth__body__h3 txt-uppercase">Testimonial</h3>
         <div class="section-fourth__wrapper">
@@ -245,20 +230,70 @@
         </div>
       </div>
       <!--  -->
-      <div>
-        <h3>Gallery</h3>
+      <div class="gallery">
+        <h3 class="txt-uppercase h3__style gallery__h3">Gallery</h3>
         <div>
-          <ul>
-            <li><img src="./images/png/img_1.png" alt="img" /></li>
-            <li><img src="./images/png/img_2.png" alt="img" /></li>
-            <li><img src="./images/png/img_3.png" alt="img" /></li>
-            <li><img src="./images/png/img_4.png" alt="img" /></li>
-            <li><img src="./images/png/img_5.png" alt="img" /></li>
-            <li><img src="./images/png/img_6.png" alt="img" /></li>
+          <ul class="gallery__list">
+            <li>
+              <img
+                class="img-circle gallery__img"
+                src="./images/png/img_1.png"
+                alt="img"
+              />
+            </li>
+            <li>
+              <img
+                class="img-circle gallery__img"
+                src="./images/png/img_2.png"
+                alt="img"
+              />
+            </li>
+            <li>
+              <img
+                class="img-circle gallery__img"
+                src="./images/png/img_3.png"
+                alt="img"
+              />
+            </li>
+            <li>
+              <img
+                class="img-circle gallery__img"
+                src="./images/png/img_4.png"
+                alt="img"
+              />
+            </li>
+            <li>
+              <img
+                class="img-circle gallery__img"
+                src="./images/png/img_5.png"
+                alt="img"
+              />
+            </li>
+            <li>
+              <img
+                class="img-circle gallery__img"
+                src="./images/png/img_6.png"
+                alt="img"
+              />
+            </li>
           </ul>
         </div>
-        <a href="#">View more pictures</a>
+        <a class="txt-uppercase link link__gallery" href="#"
+          >View more pictures</a
+        >
       </div>
     </section>
+    <!-- footer section -->
+    <footer class="footer footer__bg">
+      <div class="content-centering footer__content">
+        <p class="footer__paragraph">
+          All Rights Reserved | 2016 | Designed with love by
+          <span class="txt-color--infrared">DesignCoon</span>
+        </p>
+        <div class="footer__logo">
+          <a class="logo" href="#">Travel</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -11,7 +11,7 @@ $brainstem-grey: #b5b5b5;
 $eerie-black: #1f1f1f;
 // inheritance
 
-.wrapper-centering {
+.content-centering {
   max-width: 1038px;
   margin: 0 auto;
 }
@@ -20,8 +20,22 @@ $eerie-black: #1f1f1f;
   text-transform: uppercase;
 }
 
-.bg-light-yellow {
+.linear-gradient_yellow {
   background: linear-gradient(180deg, $light-yellow 89%, transparent 1%);
+}
+
+.txt-color-infrared {
+  color: $infrared-gloze;
+}
+
+.logo {
+  color: $infrared-gloze;
+}
+
+.txt-pt-serif {
+  font-family: PT Serif;
+  font-size: 20px;
+  line-height: 26px;
 }
 
 /*Header*/
@@ -30,66 +44,71 @@ $eerie-black: #1f1f1f;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 109px;
-}
-
-.logo {
-  color: $infrared-gloze;
-  &__header {
+  &_margin {
+    margin-bottom: 109px;
+  }
+  &__logo {
     padding: 26px 14px;
     font-size: 88px;
   }
 }
 
-.list {
+.menu__list {
   display: flex;
   flex-wrap: wrap;
-  &__item_link {
+}
+
+.item {
+  &__link {
     font-family: Montserrat;
     color: $eerie-black;
-    font-size: 18px;
     transition: 0.2s;
-    &:hover {
+    &_hover:hover {
       background-color: $infrared-gloze;
       border-radius: 6px;
       color: $white;
     }
   }
-  &__item__link_header {
-    margin: 15px 0;
-    padding: 8px 14px;
+  &__header {
+    margin: 10px;
   }
 }
+
+.header__link {
+  margin: 15px 0;
+  padding: 8px 14px;
+  font-size: 18px;
+}
+
 /*Header*/
 
 /*cection header content*/
-.main {
+.travel {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
+.travel_content {
   margin-bottom: 127px;
   max-width: 544px;
   margin: 15px;
+}
+.travel__h1 {
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
   &__h1 {
     font-family: Montserrat;
     font-weight: bold;
     font-size: 90px;
     line-height: 110px;
-    margin-bottom: 20px;
-  }
-  &__color {
-    color: $infrared-gloze;
   }
   &__txt {
-    font-family: PT Serif;
     color: $pot-black;
-    font-size: 20px;
-    line-height: 26px;
     max-width: 491px;
   }
 }
@@ -123,53 +142,41 @@ $eerie-black: #1f1f1f;
     }
   }
   &__checkbox {
-    display: flex;
-    align-items: center;
     margin: 5px 0 17px 25px;
   }
   &__button {
-    font-family: Montserrat;
     color: $white;
     background-color: $pot-black;
-    border-radius: 5px;
     min-width: 353px;
     min-height: 57px;
-    font-size: 22px;
-    line-height: 27px;
     margin: 0 24px 15px;
-    border: none;
   }
 }
+.button {
+  font-family: Montserrat;
+  border-radius: 5px;
+  font-size: 22px;
+  line-height: 27px;
+  border: none;
+}
 
-// checkbox
+/* checkbox */
 .checkbox.style-c {
   display: inline-block;
   position: relative;
   padding-left: 23px;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 .checkbox.style-c input {
   position: absolute;
   opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
 }
+
 .checkbox.style-c input:checked ~ .checkbox__checkmark {
   background-color: rgb(64, 64, 180);
 }
 .checkbox.style-c input:checked ~ .checkbox__checkmark:after {
   opacity: 1;
-}
-.checkbox.style-c:hover input ~ .checkbox__checkmark {
-  background-color: #eee;
-}
-.checkbox.style-c:hover input:checked ~ .checkbox__checkmark {
-  background-color: rgb(64, 64, 180);
 }
 .checkbox.style-c .checkbox__checkmark {
   position: absolute;
@@ -210,8 +217,8 @@ $eerie-black: #1f1f1f;
 }
 /*cection header content*/
 
-/* section our serviced*/
-.section-first {
+/* section our serviced */
+.our-services {
   margin-bottom: 62px;
   &__h4 {
     font-family: Roboto;
@@ -220,32 +227,32 @@ $eerie-black: #1f1f1f;
     margin-bottom: 89px;
   }
 }
-.section-first__list {
+.our-services__row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  &__item {
-    justify-content: flex-end;
-    max-width: 176px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    &__img {
-      margin-bottom: 45px;
-    }
-    &__paragraph {
-      text-align: center;
-      color: $pot-black;
-      font-family: PT Serif;
-      font-size: 20px;
-      line-height: 26px;
-    }
-  }
 }
+
+.our-services__column {
+  justify-content: flex-end;
+  max-width: 176px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 15px 10px;
+}
+.our-services__img {
+  margin-bottom: 45px;
+}
+.our-services__paragraph {
+  text-align: center;
+  color: $pot-black;
+}
+
 /* section our serviced*/
 
 /* section second */
-.section-second {
+.our-story {
   background-color: $infrared-gloze;
   &__flex {
     display: flex;
@@ -254,21 +261,13 @@ $eerie-black: #1f1f1f;
     flex-wrap: wrap;
   }
   &__paragraph {
-    font-family: PT Serif;
     color: $white;
-    font-size: 20px;
-    line-height: 26px;
     max-width: 629px;
   }
   &__button {
     background-color: $light-yellow;
-    border: none;
     color: $pot-black;
-    font-family: Montserrat;
-    font-size: 22px;
-    line-height: 27px;
     padding: 18px 70px;
-    border-radius: 7px;
     margin: 30px 15px;
   }
 }
@@ -290,6 +289,7 @@ $eerie-black: #1f1f1f;
 
 .section-third__cards {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .cards__body {
@@ -354,6 +354,9 @@ $eerie-black: #1f1f1f;
 /* section fourth */
 .section-fourth {
   padding-top: 127px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   &__wrapper {
     max-width: 431px;
     position: relative;
@@ -364,7 +367,7 @@ $eerie-black: #1f1f1f;
   }
   &__img {
     position: absolute;
-    border-radius: 50px;
+    border-radius: 50%;
     left: 89.5%;
     top: 12%;
   }
@@ -396,3 +399,72 @@ $eerie-black: #1f1f1f;
   }
 }
 /* section fourth */
+.gallery {
+  max-width: 406px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 406px;
+  }
+  &__h3 {
+    margin-bottom: 56px;
+    text-align: center;
+  }
+  &__img {
+    padding: 15px;
+  }
+}
+.img-circle {
+  border-radius: 50%;
+}
+
+.h3__style {
+  color: $infrared-gloze;
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 61px;
+}
+
+.link {
+  color: $infrared-gloze;
+  font-family: Montserrat;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  &__gallery {
+    padding: 15px;
+  }
+}
+
+/* section footer */
+.footer {
+  &__bg {
+    background-color: $pot-black;
+    max-height: 544px;
+  }
+  &__logo {
+    font-family: Roboto;
+    font-size: 64.357px;
+    line-height: 75px;
+    margin: 50px 0;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__paragraph {
+    font-family: PT Serif;
+    font-size: 20px;
+    line-height: 26px;
+    color: $white;
+  }
+}
+.txt-color--infrared {
+  color: $infrared-gloze;
+}
+/* section footer */
