@@ -11,8 +11,9 @@ $brainstem-grey: #b5b5b5;
 // inheritance
 
 .content-centering {
-  max-width: 1038px;
+  max-width: 1048px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .txt-uppercase {
@@ -39,6 +40,10 @@ $brainstem-grey: #b5b5b5;
 
 .txt-color--infrared {
   color: $infrared-gloze;
+}
+
+input::-webkit-inner-spin-button {
+  display: none;
 }
 
 /*Header*/
@@ -90,15 +95,16 @@ $brainstem-grey: #b5b5b5;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin: 0 -15px;
 }
 
-.travel_content {
+.travel__content {
   margin-bottom: 127px;
   max-width: 544px;
   margin: 15px;
 }
 .travel__h1 {
-  margin-bottom: 20px;
+  margin: 10px;
 }
 
 .content {
@@ -115,10 +121,13 @@ $brainstem-grey: #b5b5b5;
     max-width: 491px;
   }
 }
+.travel__paragraph {
+  margin: 10px;
+}
 
 .request-form {
   border-radius: 10px;
-  margin: 15px;
+  margin: 15px 28px 15px 15px;
   background-color: $infrared-gloze;
   display: flex;
   flex-direction: column;
@@ -212,28 +221,40 @@ $brainstem-grey: #b5b5b5;
   color: $white;
 }
 
-@media (min-width: 353px) {
-  .main {
+@media (max-width: 1014px) {
+  .travel {
     display: flex;
     justify-content: center;
   }
 }
+
+@media (max-width: 564px) {
+  .travel__h1 {
+    font-size: 75px;
+  }
+}
+
 /*cection header content*/
 
 /* section our serviced */
 .our-services {
   margin-bottom: 62px;
+  position: relative;
+  margin-top: 67px;
   &__h4 {
     font-family: Roboto;
     font-size: 50px;
     line-height: 59px;
-    margin-bottom: 89px;
+    position: absolute;
+    top: -136px;
+    padding: 10px;
   }
 }
 .our-services__row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 -15px;
 }
 
 .our-services__column {
@@ -242,7 +263,7 @@ $brainstem-grey: #b5b5b5;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px 15px 10px;
+  padding: 10px 15px 10px;
 }
 .our-services__img {
   margin-bottom: 45px;
@@ -253,11 +274,20 @@ $brainstem-grey: #b5b5b5;
 }
 
 /* section our serviced*/
-
+@media (max-width: 1014px) {
+  .our-services__h4 {
+    top: -125px;
+  }
+  .our-services {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+  }
+}
 /* section second */
 .our-story {
   background-color: $infrared-gloze;
-  &__flex {
+  &__body {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -272,6 +302,11 @@ $brainstem-grey: #b5b5b5;
     color: $pot-black;
     padding: 18px 70px;
     margin: 30px 15px;
+    &_hover:hover {
+      background-color: #bdb29c;
+      border-radius: 6px;
+      color: $white;
+    }
   }
 }
 
@@ -287,6 +322,7 @@ $brainstem-grey: #b5b5b5;
 .pricing__flex-wrap {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .pricing {
@@ -298,7 +334,7 @@ $brainstem-grey: #b5b5b5;
   &__card {
     min-width: 318px;
     border-radius: 5px 5px 0 0;
-    margin: 11px 11px 0;
+    margin: 18px 11px 0;
     // position: relative;
   }
   &__h3 {
@@ -376,8 +412,9 @@ $brainstem-grey: #b5b5b5;
 
 /* section fourth */
 
-.feedback__tesimonial {
+.feedback__testimonial {
   max-width: 500px;
+  margin-right: 70px;
 }
 
 .feedback {
@@ -385,6 +422,7 @@ $brainstem-grey: #b5b5b5;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-bottom: 120px;
   &__wrapper {
     max-width: 431px;
     position: relative;
@@ -419,6 +457,13 @@ $brainstem-grey: #b5b5b5;
   }
 }
 
+@media (max-width: 946px) {
+  .our-story__body,
+  .feedback {
+    display: flex;
+    justify-content: center;
+  }
+}
 /* section fourth */
 .gallery {
   max-width: 406px;
@@ -463,12 +508,14 @@ $brainstem-grey: #b5b5b5;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
   &__paragraph {
     font-family: PT Serif;
     font-size: 20px;
     line-height: 26px;
     color: $white;
+    margin: 10px 0;
   }
 }
 

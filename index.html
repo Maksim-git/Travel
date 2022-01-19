@@ -62,26 +62,49 @@
         </header>
         <!-- section header content -->
         <main class="travel">
-          <div class="travel_content content">
+          <div class="travel__content content">
             <h1 class="txt-uppercase content__h1 travel__h1">
               <span class="txt-color-infrared">Travel is</span>
               beautiful
             </h1>
-            <p class="content__txt txt-pt-serif">
+            <p class="travel__paragraph content__txt txt-pt-serif">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s
             </p>
           </div>
-          <form class="request-form" action="link">
+          <form
+            class="request-form"
+            action="https://fom.in.ua/echo"
+            method="POST"
+          >
             <h3 class="txt-uppercase request-form__h3">Request a quote</h3>
-            <input class="request-form__input" placeholder="Full Name" />
-            <input class="request-form__input" placeholder="Email Adress" />
-            <input class="request-form__input" placeholder="Phone Number" />
-            <input class="request-form__input" placeholder="Country" />
+            <input
+              class="request-form__input"
+              name="full_name"
+              placeholder="Full Name"
+            />
+            <input
+              class="request-form__input"
+              type="email"
+              name="email"
+              placeholder="Email Adress"
+            />
+            <input
+              class="request-form__input"
+              name="phone_number"
+              maxlength="10"
+              type="number"
+              placeholder="Phone Number"
+            />
+            <input
+              class="request-form__input"
+              name="country"
+              placeholder="Country"
+            />
             <div class="request-form__checkbox">
               <label class="checkbox style-c">
-                <input type="checkbox" />
+                <input type="checkbox" name="save_data" />
                 <div class="checkbox__checkmark"></div>
                 <div class="checkbox__body">
                   I accept the terms & conditions
@@ -145,12 +168,14 @@
     </section>
     <!-- section second -->
     <section class="our-story">
-      <div class="our-story__flex content-centering">
+      <div class="our-story__body content-centering">
         <p class="our-story__paragraph txt-pt-serif">
           We are in business for over 6 years providing amazing services to
           client and people love them to the core. View our story to know more.
         </p>
-        <button class="txt-uppercase our-story__button button">
+        <button
+          class="txt-uppercase our-story__button our-story__button_hover button"
+        >
           Our story
         </button>
       </div>
@@ -211,7 +236,7 @@
     </section>
     <!-- section fourth -->
     <section class="feedback content-centering">
-      <div class="feedback__tesimonial">
+      <div class="feedback__testimonial">
         <h3 class="txt-uppercase feedback__h3 header__txt">Testimonial</h3>
         <div class="feedback__wrapper card-feedback">
           <img
