@@ -127,10 +127,11 @@ input::-webkit-inner-spin-button {
 
 .request-form {
   border-radius: 10px;
-  margin: 15px 28px 15px 15px;
+  margin: 15px 15px 15px 15px;
   background-color: $infrared-gloze;
   display: flex;
   flex-direction: column;
+  max-width: 400px;
   &__h3 {
     font-family: Montserrat;
     color: $white;
@@ -141,7 +142,7 @@ input::-webkit-inner-spin-button {
   }
   &__input {
     border-radius: 5px;
-    min-width: 353px;
+    max-width: 353px;
     min-height: 57px;
     border: none;
     margin: 16px 24px;
@@ -159,7 +160,7 @@ input::-webkit-inner-spin-button {
   &__button {
     color: $white;
     background-color: $pot-black;
-    min-width: 353px;
+    // min-width: 353px;
     min-height: 57px;
     margin: 0 24px 15px;
   }
@@ -215,7 +216,7 @@ input::-webkit-inner-spin-button {
 }
 .checkbox.style-c .checkbox__body {
   font-family: PT Serif;
-  margin-left: 22px;
+  margin: 0 26px 0 14px;
   font-size: 20px;
   line-height: 26px;
   color: $white;
@@ -230,7 +231,8 @@ input::-webkit-inner-spin-button {
 
 @media (max-width: 564px) {
   .travel__h1 {
-    font-size: 75px;
+    font-size: 57px;
+    line-height: 65px;
   }
 }
 
@@ -283,6 +285,10 @@ input::-webkit-inner-spin-button {
     display: flex;
     justify-content: center;
   }
+  .our-services__row {
+    display: flex;
+    justify-content: center;
+  }
 }
 /* section second */
 .our-story {
@@ -296,12 +302,14 @@ input::-webkit-inner-spin-button {
   &__paragraph {
     color: $white;
     max-width: 629px;
+    margin: 10px 0;
   }
   &__button {
     background-color: $light-yellow;
     color: $pot-black;
     padding: 18px 70px;
     margin: 30px 15px;
+    transition: 0.2s;
     &_hover:hover {
       background-color: #bdb29c;
       border-radius: 6px;
@@ -351,6 +359,7 @@ input::-webkit-inner-spin-button {
   }
   &__button {
     padding: 11px 81px;
+    transition: 0.2s;
     &_hover:hover {
       background-color: $infrared-gloze;
       border-radius: 6px;
@@ -416,7 +425,7 @@ input::-webkit-inner-spin-button {
 /* section fourth */
 
 .feedback__testimonial {
-  max-width: 500px;
+  min-width: 250px;
   margin-right: 70px;
 }
 
@@ -443,7 +452,7 @@ input::-webkit-inner-spin-button {
     box-shadow: 1px 6px 12px -4px;
   }
   &__h3 {
-    margin-bottom: 45px;
+    margin: 10px 10px 45px 10px;
     text-align: center;
   }
   &__h5 {
@@ -458,7 +467,7 @@ input::-webkit-inner-spin-button {
     font-size: 20px;
     line-height: 26px;
     padding: 21px 49px 17px 26px;
-    max-width: 356px;
+    // max-width: 356px;
   }
 }
 
@@ -479,6 +488,7 @@ input::-webkit-inner-spin-button {
     display: flex;
     flex-wrap: wrap;
     max-width: 406px;
+    justify-content: center;
   }
   &__h3 {
     margin-bottom: 56px;
@@ -526,7 +536,15 @@ input::-webkit-inner-spin-button {
     margin: 10px 0;
   }
 }
-
+@media (max-width: 400px) {
+  .feedback__h3 {
+    font-size: 42px;
+  }
+  .footer__content {
+    display: flex;
+    justify-content: center;
+  }
+}
 /* section footer */
 .btn {
   width: 180px;
